@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr" >
+	<head>
+		<meta charset="utf-8">
+		<title>BMI calculator</title>
+		<style>
+			#header{
+			background-color:white;
+			border:2px solid lightgrey;
+			height:150px;
+			padding:20px;
+			margin:10px;
+			}
+			.row {
+				display: flex;
+			}
+			.column {
+				flex: 30% 70%;
+			}
+			h2{
+				text-align:center;
+				color:blue;
+			}
+			h1{
+				text-align:center;
+				color:red;
+			}
+			h3{
+				text-align:left;
+			}
+			#list{
+				border:1px solid lightgrey;
+				border-color:lightgrey;
+				border-radius: 5px;
+				font-size:18px;
+				margin:10px;
+				margin-right:20px;
+				padding:20px;
+				padding-left:210px;
+				padding-right:210px;
+			}
+			.cont{
+				font-size:15px;
+				padding:20px;
+				margin:20px;
+			}
+			input{
+				padding:1px;
+				border-color:lightgrey;
+				border-radius: 2px;
+			}
+			button{
+				margin-right:20px;
+				border-radius:5px;
+				background-color:white;
+			}
+			button:hover{
+				border-radius: 5px;
+				background-color:lightgrey;
+				font-weight:bold;
+			}
+			table,td,th{
+				border:1px solid lightgrey;
+				border-collapse:collapse;
+				padding:10px;
+			}
+			table{
+				border-radius: 5px;
+				margin:15px;
+				margin-left:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="header">
+			<h2>ShapeAI Backend Web Devlopment Bootcamp with NodeJS</h2>
+			<h1>Hands On Project</h1>
+			<h1>BMI Calculator using Node.js and Express.js</h1>
+		</section><br><br>
+		<section class="body">
+			<div class="row">
+				<div class="column">
+					<form action="/" method="post">
+						<table>
+							<thead>
+								<tr>
+									<th><h3>Enter your details to Calculate BMI:<h3></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="cont">
+										Enter Your Height:-
+										<input id="clear" type ="text" name="height"  placeholder="Height in cm"><br><br>
+										Enter Your Weight:-
+										<input id="clear" type ="text" name="weight"  placeholder="Weight in kg"><br><br>
+										Your Age:-
+										<input id="clear" type="number" name="age" placeholder="Age in years"><br><br>
+										Gender:-
+										<input id="clear" type="radio" name="gender" value="male">Male
+										<input id="clear" type="radio" name="gender" value="female">Female<br>
+										<br><button type="submit" name="submit">Calculate</button>
+										<button type="reset" value="reset">Clear</button>
+									</td>
+								</tr>		
+							</tbody>		
+						</table>
+					</form>
+					</div>
+					<div class="column" id="list">
+						<ul>
+							<li>BMI Categories:</li><br>
+								<ul>
+									<li>Underweight = <18.5</li><br>
+									<li>Normal weight = 18.5–24.9</li><br>
+									<li>Overweight = 25–29.9</li><br>
+									<li>Obesity = BMI of 30 or greater</li><br>
+								</ul>
+						</ul>
+					</div>
+			</div>
+		</section>
+	</body>
+</html>
